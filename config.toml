@@ -174,5 +174,9 @@ name = "twitter"
 url = "https://twitter.com/cruizba"
 
 [[params.socialIcons]]
+name = "youtube"
+url = "https://www.youtube.com/@cruizba"
+
+[[params.socialIcons]]
 name = "Rss"
 url = "index.xml"
