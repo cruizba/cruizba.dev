@@ -1,0 +1,129 @@
+title: 'cruizba.dev | Carlos Ruiz''s blog'
+baseURL: 'https://cruizba.dev'
+languageCode: en-us
+theme: hugo-blog-awesome
+defaultContentLanguage: en-us
+googleAnalytics: ''
+enableEmoji: true
+ignoreErrors:
+  - additional-script-loading-error
+disqusShortname: ''
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+Languages:
+  en-us:
+    languageName: English
+    languageCode: en-us
+    contentDir: content/en
+    weight: 1
+    menu:
+      main:
+        - pageRef: /
+          name: Home
+          url: /
+          weight: 10
+        - pageRef: posts
+          name: Posts
+          url: /posts/
+          weight: 20
+        - pageRef: about
+          name: About
+          url: /about/
+          weight: 30
+    params:
+      sitename: cruizba.dev
+      defaultColor: auto
+      description: >-
+        A blog where I write about my coding/hacking journey and other things I
+        find interesting.
+      mainSections:
+        - posts
+      toc: true
+      goToTop: true
+      additionalScripts:
+        - js/custom.js
+        - js/custom-2.js
+      dateFormat: ''
+      rssFeedDescription: summary
+      author:
+        avatar: avatar.jpg
+        intro: Carlos Ruiz | cruizba
+        name: Carlos Ruiz
+        description: >-
+          Welcome to my blog, a place where I will write about programming,
+          software that I develop and use in my day-to-day, and other things that interest me.
+      webmanifest:
+        name: sitename
+        short_name: sitename
+        start_url: /
+        theme_color: '#434648'
+        background_color: '#fff'
+        display: standalone
+  es:
+    languageName: Spanish
+    languageCode: es
+    contentDir: content/es
+    weight: 2
+    menu:
+      main:
+        - pageRef: /
+          name: Home
+          url: /
+          weight: 10
+        - pageRef: posts
+          name: Artículos
+          url: /posts/
+          weight: 20
+        - pageRef: about
+          name: Sobre mí
+          url: /about/
+          weight: 30
+    params:
+      sitename: cruizba.dev
+      defaultColor: auto
+      description: >-
+        Bienvenido a mi blog, un lugar donde escribiré sobre promación,
+        software que desarrollo y uso en mi día a día, y otras cosas que me interesan.
+      mainSections:
+        - posts
+      toc: true
+      goToTop: true
+      additionalScripts:
+        - js/custom.js
+        - js/custom-2.js
+      dateFormat: 2 January 2006
+      rssFeedDescription: summary
+      author:
+        avatar: avatar.jpg
+        intro: Awesome hugo blog
+        name: Sidharth R
+        description: >-
+          Bienvenido a mi blog, un lugar donde escribiré sobre promación,
+          software que desarrollo y uso en mi día a día, y otras cosas que me interesan.
+      webmanifest:
+        name: sitename
+        short_name: sitename
+        start_url: /
+        theme_color: '#434648'
+        background_color: '#fff'
+        display: standalone
+params:
+  browserconfig:
+    TileColor: '#2d89ef'
+  socialIcons:
+    - name: github
+      url: 'https://github.com/cruizba'
+    - name: twitter
+      url: 'https://twitter.com/cruizba'
+    - name: youtube
+      url: 'https://www.youtube.com/@cruizba'
+    - name: Rss
+      url: index.xml
