@@ -90,7 +90,7 @@ Languages:
       sitename: cruizba.dev
       defaultColor: auto
       description: >-
-        Bienvenido a mi blog, un lugar donde escribiré sobre promación,
+        Bienvenido a mi blog, un lugar donde escribiré sobre programación,
         software que desarrollo y uso en mi día a día, y otras cosas que me interesan.
       mainSections:
         - posts
@@ -106,7 +106,7 @@ Languages:
         intro: Carlos Ruiz | cruizba
         name: Carlos Ruiz
         description: >-
-          Bienvenido a mi blog, un lugar donde escribiré sobre promación,
+          Bienvenido a mi blog, un lugar donde escribiré sobre programación,
           software que desarrollo y uso en mi día a día, y otras cosas que me interesan.
       webmanifest:
         name: sitename
