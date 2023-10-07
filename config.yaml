@@ -42,8 +42,8 @@ Languages:
       sitename: cruizba.dev
       defaultColor: auto
       description: >-
-        A blog where I write about my coding/hacking journey and other things I
-        find interesting.
+        Welcome to my blog, a place where I will write about programming,
+        software that I develop and use in my day-to-day, and other things that interest me.
       mainSections:
         - posts
       toc: true
