@@ -4,7 +4,7 @@
             <div class="logo">
                 {{ partial "svgs/home.svg" (dict "height" 25 "width" 25) . }}
             </div>
-            <div class="logo">cruizba.dev</div>
+            <div class="logo">{{ .Site.Params.sitename }}</div>
         </a>
         <input type="checkbox" id="menu-trigger" class="menu-trigger" />
         <label for="menu-trigger">
