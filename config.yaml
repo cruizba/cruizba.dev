@@ -79,7 +79,7 @@ Languages:
           url: /
           weight: 10
         - pageRef: posts
-          name: Artículos
+          name: Posts
           url: /posts/
           weight: 20
         - pageRef: about

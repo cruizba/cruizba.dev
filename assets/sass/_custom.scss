@@ -17,3 +17,82 @@
         }
     }
 }
+
+
+.card {
+    background-color: #edecec;
+    border-radius: 1rem;
+    display: flex;
+    height: 6.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        width: 5rem;
+    }
+
+    .card-meta div {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .card-title {
+        color: $black;
+        font-weight: 500;
+    }
+
+    .card-description {
+        color: $text-base-color;
+        font-size: 0.8rem;
+    }
+
+    .card-host {
+        color: $text-base-color;
+        font-size: 0.8rem
+    }
+
+    &:hover {
+        background-color: #dbdbdb;
+    }
+}
+
+@mixin dark-mode {
+    .card {
+        background-color: #323232;
+
+        &:hover {
+            background-color: #494949;
+        }
+    }
+
+    .card-title {
+        color: $white;
+    }
+
+    .card-description {
+        color: $dark-text-base-color;
+    }
+
+    .card-host {
+        color: $dark-text-base-color;
+    }
+
+}
+
+// support JS disabled environment with media query
+@media (prefers-color-scheme: dark) {
+    // use "light" class to avoid style conflicts in js enabled environment
+    html:not(.light) {
+      @include dark-mode()
+    }
+  }
+
+html.dark {
+    @include dark-mode()
+}
+

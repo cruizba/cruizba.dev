@@ -32,6 +32,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.114.0
+    services:
+      # Service to generate links with opengraph data
+      ogjson:
+        image: akimon658/ogjson:1.0.0
+        ports:
+          - 8080:8080
     steps:
       - name: Install Hugo CLI
         run: |
