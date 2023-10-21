@@ -7,7 +7,7 @@ toc: false
 
 Hello there! Take a look to this guy: :point_down: :point_down: :point_down:
 
-![**Carlos Ruiz**](about.jpg)
+![**Carlos Ruiz**](/about.jpg)
 
 That's me, probably in the middle of troubleshooting something at my current workplace, [**OpenVidu**](https://openvidu.io/). I'm just a small piece of the incredible team behind this project, and I'm immensely proud to be a part of it. That's why it's the first thing I'm mentioning on my "about me" page :joy:.
 

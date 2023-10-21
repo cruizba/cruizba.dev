@@ -7,9 +7,9 @@ toc: false
 
 ¡Ey! Mira abajo: :point_down: :point_down: :point_down:
 
-![**Carlos Ruiz**](about.jpg)
+![**Carlos Ruiz**](/about.jpg)
 
-Si, ese soy yo, probablemente solucionando algún problema en mi actual lugar de trabajo, [**OpenVidu**](https://openvidu.io/). Solo soy una pequeña parte del increíble equipo detrás de este proyecto, y estoy inmensamente orgulloso de ser parte de él. Por eso es lo primero que menciono en mi página "sobre mí" :joy:.
+Sí, ese soy yo, probablemente solucionando algún problema en mi actual lugar de trabajo, [**OpenVidu**](https://openvidu.io/). Solo soy una pequeña parte del increíble equipo detrás de este proyecto, y estoy inmensamente orgulloso de ser parte de él. Por eso es lo primero que menciono en mi página "sobre mí" :joy:.
 
 Me llamo **Carlos Ruiz, soy Ingeniero de Software e Informática** de España y actualmente vivo en Madrid. Estudié el doble grado y un máster en **Ingeniería de Sistemas de Información** en la **Universidad Rey Juan Carlos**. Con aproximadamente 9 años de experiencia, sigo aprendiendo y creciendo cada día.
 
