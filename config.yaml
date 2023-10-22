@@ -3,7 +3,7 @@ baseURL: 'https://cruizba.dev'
 languageCode: en-us
 theme: hugo-blog-awesome
 defaultContentLanguage: en-us
-googleAnalytics: ''
+googleAnalytics: 'G-RC6CPX4G75'
 enableEmoji: true
 ignoreErrors:
   - additional-script-loading-error
