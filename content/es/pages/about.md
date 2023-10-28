@@ -2,36 +2,64 @@
 title: ¿Quién soy?
 description: Acerca del autor
 author: Carlos Ruiz
-toc: false
+toc: true
 ---
 
-¡Ey! Mira abajo: :point_down: :point_down: :point_down:
+## ¿Quién soy?
+
+¡Hola! 😄
+
+Lo primero de todo, gracias por pasarte por mi blog.  Soy **Carlos Ruiz**, Ingeniero de Software e Informática, actualmente viviendo en Madrid, España.
+
+Mi idea con este blog es organizar y compartir las cosas que aprendo y me interesan sobre desarrollo de software, DevOps, y otras cosas relacionadas con la tecnología, para a su vez, usarlo como referencia en futuros videos que estoy planeando crear en YouTube y algún que otro proyecto software que me gustaría llevar a cabo.
+
+Soy el de aquí abajo :point_down: :point_down: :point_down:
 
 ![**Carlos Ruiz**](/about.jpg)
 
-Sí, ese soy yo, probablemente solucionando algún problema en mi actual lugar de trabajo, [**OpenVidu**](https://openvidu.io/). Solo soy una pequeña parte del increíble equipo detrás de este proyecto, y estoy inmensamente orgulloso de ser parte de él. Por eso es lo primero que menciono en mi página "sobre mí" :joy:.
+## Experiencia laboral
 
-Me llamo **Carlos Ruiz, soy Ingeniero de Software e Informática** de España y actualmente vivo en Madrid. Estudié el doble grado y un máster en **Ingeniería de Sistemas de Información** en la **Universidad Rey Juan Carlos**. Con aproximadamente 9 años de experiencia, sigo aprendiendo y creciendo cada día.
+Actualmente, estoy trabajando con el equipo de [OpenVidu](https://openvidu.io/), una plataforma de comunicaciones WebRTC para videoconferencias, streaming, grabación... desarrollada por el grupo de investigación [CodeURJC](https://www.codeurjc.es/) de la [Universidad Rey Juan Carlos](https://www.urjc.es/).
 
-En este momento, estoy trabajando con [**Code URJC**](https://www.codeurjc.es/), un grupo de investigación de la Universidad Rey Juan Carlos, donde estoy contribuyendo al proyecto [**OpenVidu**](https://openvidu.io/). He aprendido mucho sobre desarrollo de software con ellos, y sigo haciéndolo. Trabajar con WebRTC no es nada fácil, pero eso es exactamente por lo que OpenVidu tiene éxito: lo simplificamos para que los desarrolladores lo tengan más fácil. Crear una plataforma para otros programadores es a la vez un desafío y una recompensa.
+Anteriormente, estuve en el Grupo de Investigación de Inteligencia Artificial [GIA](http://www.ia.urjc.es/GIA/es/) de la misma universidad, y en [CGI](https://www.cgi.com/), en mis prácticas de empresa.
 
-Antes de unirme a [**Code URJC**](https://www.codeurjc.es/), formé parte del Grupo de Investigación de Inteligencia Artificial en URJC [**GIA**](http://www.ia.urjc.es/GIA/es/). Durante este tiempo, estuve involucrado en el desarrollo de un simulador de sistema de compartición de bicicletas, lo que amplió mi comprensión de las aplicaciones prácticas de la IA y colaboré en dos publicaciones sobre el tema:
+## Colaboraciones
+
+He colaborado con varias startups:
+- [Rated Power](https://ratedpower.com/): Implementé algunas características para mejorar su escalabilidad y su sistema CI/CD.
+- [TwoToForty](http://twotoforty.com/): Una startup que tiene como objetivo ayudar a los departamentos de recursos humanos a mejorar su proceso de contratación. Colaboré como desarrollador de su aplicación web.
+
+## Publicaciones
+
+Durante mi tiempo en GIA, colaboré en dos publicaciones:
 
 - [**Estrategias de Equilibrio para Sistemas de Compartición de Bicicletas**](https://doi.org/10.1007/978-3-030-17294-7_16)
 - [**Un Simulador de Sistema de Compartición de Bicicletas**](https://doi.org/10.1007/978-3-319-94779-2_37)
 
-Antes de esto, pasé mi primer año con [**CGI**](https://www.cgi.com/). Aunque mi permanencia allí duró solo unos pocos meses, fue una experiencia increíblemente enriquecedora. Perfeccioné mis habilidades en Java y Spring, y obtuve valiosos conocimientos sobre el mundo de la consultoría y los aspectos prácticos del desarrollo de software.
+## Proyectos secundarios
 
-Mientras estaba en [**Code URJC**](https://www.codeurjc.es/), también he colaborado con startups como [**Rated Power**](https://ratedpower.com/), donde implementé características para mejorar la escalabilidad y el sistema CI/CD. Es otro fantástico proyecto con un equipo igualmente fantástico.
+Me gusta crear herramientas principalmente relacionadas con Docker y Linux. Me encanta crear proyectos que puedan eliminar fricciones a la hora de comenzar a desarrollar proyectos, o eliminar la carga mental de llevar múltiples proyectos a la vez.
 
-También escribo algunos proyectos secundarios en mi tiempo libre que por alguna razón, atraen la atención de la comunidad:
+Al final, todo se reduce a que me gusta crear herramientas que me faciliten la vida, y si a alguien más le sirven, pues mucho mejor 😉.
 
-- **ubuntu-dind**: Una imagen Docker con Ubuntu y Docker-in-Docker. Es útil para las pipelines de CI/CD.
+- **ubuntu-dind**: Una imagen Docker con Ubuntu y Docker-in-Docker.
 
 {{< card "https://github.com/cruizba/ubuntu-dind" >}}
 
-- **desktopus**: Un generador de imágenes de escritorio linux docker. **Estad atentos a este proyecto, tengo grandes planes para él :sunglasses:.**
+- **desktopus**: Tu escritorio Linux como código, en cualquier lugar.
 
 {{< card "https://github.com/cruizba/desktopus" >}}
 
-Mientras escribo esto, estoy planeando crear videos de YouTube sobre software, Docker y temas relacionados, y también desarrollar un proyecto de software en el que he estado pensando unod años... Pero compartiré más sobre eso una vez que tenga algo que mostrar. **¡Estad atentos! :winking_face:.**
+## Lenguajes y Tecnologías que he utilizado
+
+- Linux (Incluyendo scripting en bash, administración básica del sistema, etc.)
+- Docker y Kubernetes
+- Herramientas IaC (Ansible, CloudFormation)
+- CI/CD (GitHub Actions, Jenkins)
+- Backend con Java y Spring Boot, Node.js con Express, NestJs, Typescript, Golang y Python.
+- Frontend con Angular (Sí, me estoy perdiendo algunas de las tendencias actuales aquí...)
+- Bases de datos (MySQL, Redis)
+- Proveedores de Cloud (Principalmente AWS)
+- Git (obviamente)
+- Conocimientos básicos de redes principalmente debido a los dolores de cabeza con WebRTC
+- Probablemente me esté olvidando de algo, pero creo que se entiende la idea...
