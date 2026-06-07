@@ -1,18 +1,45 @@
-<!-- Get argument and JSON -->
-{{ $url := .Get 0 }}
-{{ $json := getJSON "http://localhost:8080/?url=" $url }}
+{{- /* Link preview card: fetches the target URL at build time and extracts its OpenGraph metadata. */ -}}
+{{- $url := .Get 0 -}}
+
+{{- /* Defaults so the card degrades to a plain link if the fetch fails */ -}}
+{{- $title := $url -}}
+{{- $description := "" -}}
+{{- $image := "" -}}
+{{- $host := "" -}}
+{{- with urls.Parse $url -}}{{ $host = .Host }}{{- end -}}
+
+{{- $res := "" -}}
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Err -}}
+    {{- warnf "card: error fetching %q: %s" $url . -}}
+  {{- else with .Value -}}
+    {{- $res = . -}}
+  {{- else -}}
+    {{- warnf "card: no resource for %q" $url -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $res -}}
+  {{- $html := .Content -}}
+  {{- with (findRESubmatch `<meta[^>]+property="og:title"[^>]+content="([^"]*)"` $html 1) -}}
+    {{- with index . 0 -}}{{ $title = htmlUnescape (index . 1) }}{{- end -}}
+  {{- end -}}
+  {{- with (findRESubmatch `<meta[^>]+property="og:description"[^>]+content="([^"]*)"` $html 1) -}}
+    {{- with index . 0 -}}{{ $description = htmlUnescape (index . 1) }}{{- end -}}
+  {{- end -}}
+  {{- with (findRESubmatch `<meta[^>]+property="og:image"[^>]+content="([^"]*)"` $html 1) -}}
+    {{- with index . 0 -}}{{ $image = index . 1 }}{{- end -}}
+  {{- end -}}
+{{- end -}}
 
 <!-- Add target="_blank" when opening external links -->
 <a href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
   <div class="card">
     <div class="card-meta">
-      <div class="card-title" title="{{ $json.Title }}">{{ $json.Title }}</div>
-      <div class="card-host">{{ $json.URL.Host }}</div>
-      <div class="card-description" title="{{ $json.Description }}">{{ $json.Description }}</div>
+      <div class="card-title" title="{{ $title }}">{{ $title }}</div>
+      <div class="card-host">{{ $host }}</div>
+      {{ with $description }}<div class="card-description" title="{{ . }}">{{ . }}</div>{{ end }}
     </div>
-    <!-- Image is an array so use the first one -->
-    {{ range first 1 $json.Image }}
-      <img src="{{ .URL }}" alt="{{ .Alt }}">
-    {{ end }}
+    {{ with $image }}<img src="{{ . }}" alt="{{ $title }}">{{ end }}
   </div>
 </a>

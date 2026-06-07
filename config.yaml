@@ -1,13 +1,12 @@
 title: 'cruizba.dev | Carlos Ruiz''s blog'
 baseURL: 'https://cruizba.dev'
-languageCode: en-us
 theme: hugo-blog-awesome
 defaultContentLanguage: en-us
-googleAnalytics: ''
 enableEmoji: true
-ignoreErrors:
-  - additional-script-loading-error
-disqusShortname: ''
+caches:
+  getresource:
+    maxAge: 24h
+    dir: ':cacheDir/:project'
 markup:
   highlight:
     noClasses: false
@@ -20,8 +19,8 @@ markup:
     ordered: false
 Languages:
   en-us:
-    languageName: English
-    languageCode: en-us
+    label: English
+    locale: en-us
     contentDir: content/en
     weight: 1
     menu:
@@ -47,10 +46,8 @@ Languages:
       mainSections:
         - posts
       toc: true
+      tocOpen: true
       goToTop: true
-      additionalScripts:
-        - js/custom.js
-        - js/custom-2.js
       dateFormat: ''
       rssFeedDescription: summary
       author:
@@ -68,8 +65,8 @@ Languages:
         background_color: '#fff'
         display: standalone
   es:
-    languageName: Spanish
-    languageCode: es
+    label: Spanish
+    locale: es
     contentDir: content/es
     weight: 2
     menu:
@@ -95,10 +92,8 @@ Languages:
       mainSections:
         - posts
       toc: true
+      tocOpen: true
       goToTop: true
-      additionalScripts:
-        - js/custom.js
-        - js/custom-2.js
       dateFormat: 2 January 2006
       rssFeedDescription: summary
       author:
