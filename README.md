@@ -5,13 +5,13 @@ My personal website, built with [Hugo](https://gohugo.io/). Theme used is
 
 # Serve it locally
 
-1. Install Hugo: https://gohugo.io/installation/linux/
-2. Run ogjson, a service which serves an API which returns JSON with OpenGraph metadata to generate links with card previews ([More info](https://akimon658.github.io/en/p/2022/hugo-url-cards/)):
+1. Install Hugo (extended): https://gohugo.io/installation/linux/
+2. Run the following command:
 ```
-docker run -d --rm -p 8080:8080 akimon658/ogjson:1.0.0
+hugo server
 ```
 
-3. Run the following command:
-```
-hugo server --noHttpCache
-```
+Link preview cards are generated at build time by fetching each URL's OpenGraph
+metadata with `resources.GetRemote` (see `layouts/shortcodes/card.html`).
+Responses are cached for 24h, so builds only hit the network when the cache is
+cold or expired.

@@ -43,20 +43,12 @@
                 {{ if .IsTranslated }}
                     <li>
                         <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            {{ $siteLanguages := .Site.Languages}}
                             {{ $pageLang := .Page.Lang}}
                             {{ range .Page.AllTranslations }}
-                                {{ $translation := .}}
-                                {{ range $siteLanguages }}
-                                    {{ if eq $translation.Lang .Lang }}
-                                        {{ $selected := false }}
-                                        {{ if eq $pageLang .Lang}}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageCode | upper }}
-                                            </option>
-                                        {{ else }}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageCode | upper }}</option>
-                                        {{ end }}
-                                    {{ end }}
+                                {{ if eq $pageLang .Lang }}
+                                    <option id="{{ .Language }}" value="{{ .Permalink }}" selected>{{ .Language.Locale | upper }}</option>
+                                {{ else }}
+                                    <option id="{{ .Language }}" value="{{ .Permalink }}">{{ .Language.Locale | upper }}</option>
                                 {{ end }}
                             {{ end }}
                         </select>                
