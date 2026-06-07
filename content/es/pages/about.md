@@ -42,13 +42,10 @@ Me gusta crear herramientas principalmente relacionadas con Docker y Linux. Me e
 
 Al final, todo se reduce a que me gusta crear herramientas que me faciliten la vida, y si a alguien más le sirven, pues mucho mejor 😉.
 
-- **ubuntu-dind**: Una imagen Docker con Ubuntu y Docker-in-Docker.
-
-{{< card "https://github.com/cruizba/ubuntu-dind" >}}
-
-- **desktopus**: Tu escritorio Linux como código, en cualquier lugar.
-
-{{< card "https://github.com/cruizba/desktopus" >}}
+- {{< repo "https://github.com/cruizba/ubuntu-dind" >}} Una imagen Docker con Ubuntu y Docker-in-Docker.
+- {{< repo "https://github.com/cruizba/desktopus" >}} Tu escritorio Linux como código, en cualquier lugar.
+- {{< repo "https://github.com/cruizba/publicip" >}} Librería en Go y CLI para obtener tu IP pública vía STUN, DNS o HTTP.
+- {{< repo "https://github.com/cruizba/AutoHttps" >}} Imagen de contenedor minimalista con Caddy como proxy para desplegar aplicaciones con HTTPS y Let's Encrypt fácilmente, con o sin nombre de dominio.
 
 ## Lenguajes y Tecnologías que he utilizado
 

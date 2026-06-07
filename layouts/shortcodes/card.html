@@ -37,9 +37,12 @@
   <div class="card">
     <div class="card-meta">
       <div class="card-title" title="{{ $title }}">{{ $title }}</div>
-      <div class="card-host">{{ $host }}</div>
+      <div class="card-host">
+        {{ with $host }}<img class="card-favicon" src="https://{{ . }}/favicon.ico" alt="" loading="lazy" onerror="this.remove()">{{ end }}
+        {{ $host }}
+      </div>
       {{ with $description }}<div class="card-description" title="{{ . }}">{{ . }}</div>{{ end }}
     </div>
-    {{ with $image }}<img src="{{ . }}" alt="{{ $title }}">{{ end }}
+    {{ with $image }}<img class="card-image" src="{{ . }}" alt="{{ $title }}" loading="lazy">{{ end }}
   </div>
 </a>

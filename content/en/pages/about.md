@@ -42,13 +42,10 @@ I like to create tools mainly related to Docker and Linux. I love creating proje
 
 In the end, it all comes down to the fact that I like to create tools that make my life easier, and if they can serve someone else... much better 😉!
 
-- **ubuntu-dind**: A Docker image with Ubuntu and Docker-in-Docker.
-
-{{< card "https://github.com/cruizba/ubuntu-dind" >}}
-
-- **desktopus**: Your Linux desktop as code, anywhere.
-
-{{< card "https://github.com/cruizba/desktopus" >}}
+- {{< repo "https://github.com/cruizba/ubuntu-dind" >}} A Docker image with Ubuntu and Docker-in-Docker.
+- {{< repo "https://github.com/cruizba/desktopus" >}} Your Linux desktop as code, anywhere.
+- {{< repo "https://github.com/cruizba/publicip" >}} Go library and CLI to get your public IP via STUN, DNS or HTTP.
+- {{< repo "https://github.com/cruizba/AutoHttps" >}} Minimalistic Caddy proxy container image to easily deploy apps with HTTPS and Let's Encrypt, with or without a domain name.
 
 ## Languages & Technologies I used
 

@@ -20,68 +20,166 @@
 
 
 .card {
-    background-color: #edecec;
-    border-radius: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #e4e4e4;
+    border-radius: 0.75rem;
     display: flex;
-    height: 6.5rem;
     justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
     margin-bottom: 1rem;
-    padding: 0.8rem;
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 
-    img {
-        height: 100%;
-        object-fit: cover;
-        width: 5rem;
+    .card-meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.3rem;
+        padding: 0.9rem 1.1rem;
+        min-width: 0;
     }
 
-    .card-meta div {
+    .card-title,
+    .card-description {
         display: -webkit-box;
         overflow: hidden;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
     }
 
     .card-title {
         color: $black;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 1.35;
     }
 
     .card-description {
         color: $text-base-color;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
 
     .card-host {
         color: $text-base-color;
-        font-size: 0.8rem
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-favicon {
+        border-radius: 3px;
+        height: 14px;
+        width: 14px;
+    }
+
+    .card-image {
+        aspect-ratio: 2 / 1;
+        flex-shrink: 0;
+        max-width: 45%;
+        object-fit: cover;
+        width: 14rem;
     }
 
     &:hover {
-        background-color: #dbdbdb;
+        border-color: #c6c6c6;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card .card-image {
+        display: none;
+    }
+}
+
+.repo-card {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 0.45rem;
+    background-color: #fafafa;
+    border: 1px solid #e4e4e4;
+    border-radius: 0.5rem;
+    margin: 0.15rem 0.35rem 0.15rem 0;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+
+    svg {
+        fill: currentColor;
+        flex-shrink: 0;
+    }
+
+    .repo-icon {
+        color: $black;
+    }
+
+    .repo-name {
+        color: $black;
+        font-weight: 600;
+    }
+
+    .repo-stars {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: $text-base-color;
+        font-size: 0.85rem;
+    }
+
+    &:hover {
+        background-color: #f0f0f0;
+        border-color: #c6c6c6;
     }
 }
 
 @mixin dark-mode {
     .card {
-        background-color: #323232;
+        background-color: #2b2b2b;
+        border-color: #3f3f3f;
 
         &:hover {
-            background-color: #494949;
+            border-color: #5a5a5a;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-title {
+            color: $white;
+        }
+
+        .card-description,
+        .card-host {
+            color: $dark-text-base-color;
         }
     }
 
-    .card-title {
-        color: $white;
-    }
+    .repo-card {
+        background-color: #2b2b2b;
+        border-color: #3f3f3f;
 
-    .card-description {
-        color: $dark-text-base-color;
-    }
+        .repo-icon,
+        .repo-name {
+            color: $white;
+        }
 
-    .card-host {
-        color: $dark-text-base-color;
-    }
+        .repo-stars {
+            color: $dark-text-base-color;
+        }
 
+        &:hover {
+            background-color: #353535;
+            border-color: #5a5a5a;
+        }
+    }
 }
 
 // support JS disabled environment with media query
